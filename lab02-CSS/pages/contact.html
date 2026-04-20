@@ -1,0 +1,124 @@
+<!-- pages/contact.html -->
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="./styles/responsive.css">
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback</title>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <ul class="nav-list">
+      <div class="two-column card">
+        <li><a href="../index.html">Головна</a></li> 
+      </div>
+      <div class="two-column card">
+      <li><a href="./about.html">Про мене</a></li>
+      </div>
+      <div class="two-column card">
+        <li><a href="./contact.html" class="active">Контакти</a></li>
+      </div> 
+    </ul>
+  </div>
+</header>
+
+<main>
+<div class="container">
+        <div class="two-column card">
+<h1>Контакти</h1>
+
+<form action="./submit.html" method="get">
+
+<h2>
+<fieldset>
+<legend>Connect with . . .</legend>
+
+<label>
+<input type="radio" name="contactWay" value="email" checked>
+Miku
+</label>
+<label>
+<input type="radio" name="contactWay" value="phone">
+Crypton Future Media inc.
+</label>
+</fieldset>
+</h2>
+</div>
+</div>
+<p>        
+        <div class="container">
+        <div class="two-column card">
+<label for="name">Ім’я:</label>
+<input id="name" name="name" type="text" required minlength="2">
+</p>
+
+<p>
+<label for="email">Email:</label>
+<input id="email" name="email" type="email" required>
+</p>
+
+<p>
+<label for="phone">Телефон:</label>
+<input id="phone" name="phone" type="tel">
+</p>
+
+<p>
+<label for="topic">Тема:</label>
+<select id="topic" name="topic">
+<option value="study">Support Company</option>
+<option value="work">Told Fan</option>
+<option value="other">Anything</option>
+</select>
+</p>
+
+<fieldset>
+
+<legend>Зручний спосіб зв'язку</legend>
+
+<label>
+<input type="radio" name="contactWay" value="email" checked>
+Email
+</label>
+
+<label>
+<input type="radio" name="contactWay" value="phone">
+Телефон
+</label>
+
+</fieldset>
+
+<p>
+           <div class="container">
+        <div class="two-column card">
+<label for="message">Повідомлення:</label><br>
+<textarea id="message" name="message" rows="5" cols="30"></textarea>
+</p>
+</div>
+</div>
+<p>
+<label>
+<input type="checkbox" name="agree" required>
+Погоджуюсь з правилами
+</label>
+</p>
+
+<button type="submit">Send</button>
+</div>
+</div>
+</form>
+
+</main>
+
+<footer>
+<p>© 2026 Artem Yuzhankov</p>
+</footer>
+
+</body>
+</html>
+
